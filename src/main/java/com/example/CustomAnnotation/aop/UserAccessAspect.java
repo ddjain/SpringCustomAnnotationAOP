@@ -16,7 +16,7 @@ import com.example.CustomAnnotation.annotation.CustomAnnotation;
 public class UserAccessAspect {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Around("@annotation(com.example.demo.annotation.MyAnnotation)")
+	@Around("@annotation(com.example.CustomAnnotation.annotation.CustomAnnotation)")
 	public Object trackTime(ProceedingJoinPoint jointPoint) throws Throwable {
 		boolean debug=false;
 		long stratTime=System.currentTimeMillis();
